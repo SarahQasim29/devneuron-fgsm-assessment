@@ -12,7 +12,7 @@ The goal of this assessment is to evaluate:
 - Frontend–backend integration
 - Deployment and technical communication skills
 
-
+---
 
 ## Tech Stack
 
@@ -21,7 +21,7 @@ The goal of this assessment is to evaluate:
 - **Model:** Pretrained MNIST classifier
 - **Deployment:** Render Free Tier (AWS Free Tier not used due to account restrictions)
 
-
+---
 
 ## Part 1 — Backend (FastAPI + ML)
 
@@ -37,6 +37,7 @@ backend/
 ├── train_model.py # Model training script
 └── requirements.txt # Python dependencies
 
+---
 
 ### FGSM Implementation
 
@@ -76,20 +77,15 @@ uvicorn app_fgsm:app --reload
 Backend runs at:
 http://localhost:8000
 
-Part 2 — Frontend (Next.js)
+##  Part 2 — Frontend (Next.js)
 Overview
 
 A single-page Next.js application that allows users to:
-
-Upload an image
-
-Adjust epsilon via a slider
-
-Trigger FGSM attack
-
-View clean vs adversarial predictions
-
-Display both images side-by-side
+-> Upload an image
+-> Adjust epsilon via a slider
+-> Trigger FGSM attack
+-> View clean vs adversarial predictions
+-> Display both images side-by-side
 
 Key Files
 frontend/
@@ -106,11 +102,11 @@ npm run dev
 Frontend runs at:
 http://localhost:3000
 
-Part 3 — Deployment
+##  Part 3 — Deployment
 Deployment Choice
 
 AWS Free Tier deployment was not possible due to payment method requirements.
-Therefore, Render Free Tier was used as allowed by the assessment guidelines (with acknowledgment of partial marks).
+Therefore, Render Free Tier was used as allowed by the assessment guidelines.
 
 Deployed URLs
 
@@ -118,7 +114,7 @@ Backend API:
 https://devneuron-fgsm-assessment-1.onrender.com
 
 Frontend Application:
-(Add your deployed frontend URL here)
+https://devneuron-fgsm-assessment-final.onrender.com
 
 If deployment was unavailable, localhost execution screenshots are provided.
 
@@ -128,10 +124,10 @@ Mathematically, FGSM is defined as:
 x_adv = x + ε · sign(∇ₓ J(θ, x, y))
 
 Where:
-- **x** is the original input image  
-- **y** is the true label  
-- **J(θ, x, y)** is the loss function  
-- **ε (epsilon)** controls the perturbation strength  
+- x is the original input image  
+- y is the true label  
+- J(θ, x, y) is the loss function  
+- ε (epsilon) controls the perturbation strength  
 
 FGSM is computationally efficient and demonstrates how even small, human‑imperceptible changes to the input can significantly affect a model’s predictions.
 
