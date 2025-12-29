@@ -1,0 +1,4 @@
+Epsilon: 0.0, Accuracy: 1.0000
+Epsilon: 0.05, Accuracy: 0.7100
+Epsilon: 0.1, Accuracy: 0.2850
+Epsilon: 0.2, Accuracy: 0.0500
