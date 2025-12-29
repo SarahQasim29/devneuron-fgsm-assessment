@@ -82,9 +82,13 @@ Overview
 
 A single-page Next.js application that allows users to:
 -> Upload an image
+
 -> Adjust epsilon via a slider
+
 -> Trigger FGSM attack
+
 -> View clean vs adversarial predictions
+
 -> Display both images side-by-side
 
 Key Files
@@ -136,6 +140,9 @@ FGSM is computationally efficient and demonstrates how even small, human‑imper
 
 ## Observations
 -> The model performs well on clean MNIST images
+
 -> Small epsilon values produce minor perturbations with occasional misclassification
+
 -> Increasing epsilon results in stronger attacks and higher misclassification rates
+
 -> Attack success is directly correlated with epsilon magnitude
