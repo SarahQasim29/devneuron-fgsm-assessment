@@ -124,13 +124,13 @@ If deployment was unavailable, localhost execution screenshots are provided.
 The Fast Gradient Sign Method (FGSM) is a white-box adversarial attack that generates adversarial examples by applying a small perturbation to the input in the direction of the gradient of the loss function.
 
 Mathematically, FGSM is defined as:
-#                                                            x_adv = x + ε · sign(∇ₓ J(θ, x, y))
+**x_adv = x + ε · sign(∇ₓ J(θ, x, y))**
 
 Where:
-- x is the original input image  
-- y is the true label  
-- J(θ, x, y) is the loss function  
-- ε (epsilon) controls the perturbation strength  
+- **x** is the original input image  
+- **y** is the true label  
+- **J(θ, x, y)** is the loss function  
+- **ε (epsilon)** controls the perturbation strength  
 
 FGSM is computationally efficient and demonstrates how even small, human‑imperceptible changes to the input can significantly affect a model’s predictions.
 
