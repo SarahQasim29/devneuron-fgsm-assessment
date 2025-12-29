@@ -24,7 +24,7 @@ const [advImage, setAdvImage] = useState(null);
     formData.append("epsilon", epsilon.toString());
 
     try {
-      const res = await fetch("http://127.0.0.1:8000/attack", {
+      const res = await fetch("https://devneuron-fgsm-assessment-1.onrender.com/attack", {
         method: "POST",
         body: formData,
       });
