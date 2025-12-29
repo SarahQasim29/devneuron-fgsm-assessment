@@ -1,0 +1,99 @@
+.container {
+  min-height: 100vh;
+  padding: 40px;
+  background: #0f172a;
+  color: #e5e7eb;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #38bdf8;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #94a3b8;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: #020617;
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #cbd5f5;
+}
+
+.fileInput {
+  width: 100%;
+  padding: 8px;
+  background: #020617;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  color: #e5e7eb;
+}
+
+.slider {
+  width: 100%;
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  background: #38bdf8;
+  color: #020617;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #0ea5e9;
+}
+
+.results {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #334155;
+}
+
+.resultText {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.success {
+  color: #22c55e;
+  font-weight: 600;
+}
+
+.failure {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+.imageWrapper {
+  margin-top: 15px;
+}
+
+.imageWrapper img {
+  border-radius: 8px;
+  border: 1px solid #334155;
+  max-width: 100%;
+}
