@@ -117,11 +117,14 @@ Frontend Application:
 https://devneuron-fgsm-assessment-final.onrender.com
 
 If deployment was unavailable, localhost execution screenshots are provided.
+```
+---
 
-Part 4 — FGSM Explanation
+### Part 4 — FGSM Explanation
 The Fast Gradient Sign Method (FGSM) is a white-box adversarial attack that generates adversarial examples by applying a small perturbation to the input in the direction of the gradient of the loss function.
+
 Mathematically, FGSM is defined as:
-x_adv = x + ε · sign(∇ₓ J(θ, x, y))
+## x_adv = x + ε · sign(∇ₓ J(θ, x, y))
 
 Where:
 - x is the original input image  
@@ -131,7 +134,7 @@ Where:
 
 FGSM is computationally efficient and demonstrates how even small, human‑imperceptible changes to the input can significantly affect a model’s predictions.
 
-Observations
+## Observations
 -> The model performs well on clean MNIST images
 -> Small epsilon values produce minor perturbations with occasional misclassification
 -> Increasing epsilon results in stronger attacks and higher misclassification rates
